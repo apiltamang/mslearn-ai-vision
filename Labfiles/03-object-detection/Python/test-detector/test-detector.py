@@ -21,7 +21,7 @@ def main():
         prediction_client = CustomVisionPredictionClient(endpoint=prediction_endpoint, credentials=credentials)
 
         # Load image and get height, width and channels
-        image_file = 'produce.jpg'
+        image_file = 'test-cat-dog.jpg'
         print('Detecting objects in', image_file)
         image = Image.open(image_file)
         h, w, ch = np.array(image).shape
